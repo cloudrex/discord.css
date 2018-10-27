@@ -6,5 +6,5 @@ bot {
 
 command {
     name: ping;
-    message: Pong! [ping]ms;
+    message: Pong! [bot.ping]ms;
 }

@@ -122,7 +122,17 @@ bot.on("message", (msg: Message) => {
         const args: string[] = msg.content.substr((botConfig.prefix as string).length).split(" ");
 
         if (commands.has(args[0])) {
-            msg.channel.send((commands.get(args[0]) as string).replace("[ping]", bot.ping.toString()));
+            msg.channel.send((commands.get(args[0]) as string)
+                // Author
+                .replace("[author.name]", msg.author.username)
+                .replace("[author.tag]", msg.author.tag)
+                .replace("[author.id]", msg.author.id)
+
+                // Bot
+                .replace("[bot.name]", bot.user.username)
+                .replace("[bot.tag]", bot.user.tag)
+                .replace("[bot.id]", bot.user.id)
+                .replace("[bot.ping]", Math.round(bot.ping).toString()));
         }
     }
 });
