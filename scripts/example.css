@@ -1,4 +1,10 @@
 bot {
     token: YOUR_TOKEN_HERE;
     status: Proudly made in CSS;
+    prefix: css!;
+}
+
+command {
+    name: ping;
+    message: Pong!;
 }
