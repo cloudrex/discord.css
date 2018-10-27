@@ -124,7 +124,7 @@ bot.on("message", (msg: Message) => {
         if (commands.has(args[0])) {
             msg.channel.send((commands.get(args[0]) as string)
                 // Message
-                .replace("[msg.content]", msg.content)
+                .replace("[msg.content]", args.slice(1).join(" "))
                 .replace("[msg.id]", msg.id)
 
                 // Author
