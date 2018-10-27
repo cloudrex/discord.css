@@ -1,0 +1,31 @@
+{
+    "name": "discord.css",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/runner.js",
+    "scripts": {
+        "start": "npm run build && node dist/runner.js",
+        "build": "tsc"
+    },
+    "keywords": [
+        "discord",
+        "css",
+        "bot",
+        "discord bot",
+        "discord css",
+        "discord.css",
+        "discord css"
+    ],
+    "contributors": [
+        "CloudRex <cloudrex@outlook.com> (http://cloudrex.me/)",
+        "draem"
+    ],
+    "license": "MIT",
+    "bin": {
+        "dcss": "dist/runner.js"
+    },
+    "dependencies": {
+        "@types/node": "^10.12.0",
+        "discord.js": "^11.4.2"
+    }
+}
