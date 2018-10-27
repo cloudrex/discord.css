@@ -30,7 +30,7 @@ const commands: Map<string, string> = new Map();
 
 for (let block of result) {
     switch (block.name) {
-        case "bot": {
+        case "config": {
             for (let i = 0; i < block.fields.length; i++) {
                 const field: IField = block.fields[i];
 
