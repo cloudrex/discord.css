@@ -1,10 +1,10 @@
 bot {
     token: YOUR_TOKEN_HERE;
-    status: Proudly made in CSS;
+    status: Proudly made in CSS | css!;
     prefix: css!;
 }
 
 command {
     name: ping;
-    message: Pong!;
+    message: Pong! [ping]ms;
 }

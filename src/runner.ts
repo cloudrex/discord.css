@@ -122,7 +122,7 @@ bot.on("message", (msg: Message) => {
         const args: string[] = msg.content.substr((botConfig.prefix as string).length).split(" ");
 
         if (commands.has(args[0])) {
-            msg.channel.send(commands.get(args[0]));
+            msg.channel.send((commands.get(args[0]) as string).replace("[ping]", bot.ping.toString()));
         }
     }
 });
