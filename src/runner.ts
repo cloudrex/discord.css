@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import Parser, {IBlock, IField} from "./parser";
 import fs from "fs";
 import {Client, Message} from "discord.js";
