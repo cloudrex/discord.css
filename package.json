@@ -4,8 +4,8 @@
     "description": "",
     "main": "dist/runner.js",
     "scripts": {
-        "prepare":"tsc"
-        "start": "node dist/runner.js",
+        "prepare":"tsc",
+        "start": "node dist/runner.js"
     },
     "keywords": [
         "discord",
